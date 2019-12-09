@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --black: #0D0D0D;
+  --red: #FF2D2B;
+}
+
+.scoreboard {
+  width: 80%;
+  margin: 10rem auto;
+  background: #0b5402;
+  color: #fff;
+  border-radius: 0.5rem;
+  border: 4px solid #aaa;
+}
+
+.topRow {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-around;
+  place-items: center;
+  border: 3px solid #fff;
+  border-radius: 0.5rem;
+  width: 15rem;
+}
+
+.home,
+.away {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  place-items: center;
+  border: 3px solid #fff;
+  border-radius: 0.5rem;
+  width: 15rem;
+}
+
+.home {
+  background: #656565;
+}
+
+.away {
+  background: #AF750A;
+}
+
+.home__name,
+.away__name,
+.out__title,
+.ball__title,
+.strike__title,
+.foul__title,
+.inning__title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.home__score,
+.away__score {
+  font-family: 'Ozone';
+  font-size: 7rem;
+  width: 90%;
+  text-align: center;
+  background: var(--black);
+  color: var(--red);
+  padding: 5%;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  height: 20rem;
+}
+
+.out,
+.ball,
+.strike,
+.foul,
+.inning {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  place-items: center;
+}
+
+.out__value,
+.ball__value,
+.strike__value,
+.foul__value,
+.inning__value {
+  font-family: 'Ozone';
+  font-size: 5rem;
+  color: var(--red);
+  width: 7rem;
+  text-align: center;
+  background: var(--black);
+  margin: 1rem auto;
+  border-radius: 4px;
+  padding: 1.6rem;
+  border: 1px solid #fff;
+}
+
+.buttons {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hitBtn,
+.ballBtn,
+.strikeBtn,
+.foulBtn {
+  margin: 1rem;
+  border-radius: 4px;
+}
+
+
