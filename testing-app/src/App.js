@@ -20,15 +20,15 @@ function App() {
         <div className='topRow'>
           <div className='home'>
             <h2 className='home__name'>NYY</h2>
-          </div>
           <div className='home__score'>{homeScore}</div>
+          </div>
           <div className='away'>
             <h2 className='away__name'>NYM</h2>
             <div className='away__score'>{awayScore}</div>
           </div>
       </div>
       <section>
-        <Display value={pitch} />
+        <Display  value={pitch} />
       </section>
       <section className='buttons'>
       <section>
